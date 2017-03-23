@@ -1,0 +1,9 @@
+1) <button onclick="alert('HI')">Click me</button>
+  alert-> is the thing we are going to do, will give us a pop up page
+  Hi -> message its going to display
+
+
+2) use console in chrome to debug and errors we get from JavaScript
+
+// single line comment
+/*   this is for multiple line comment */

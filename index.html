@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <!--- In line code example (Don't use it in industry)
+    <button onclick="alert('HI')">Click me</button>
+-->
+<p id="text">Hello World!</p>
+
+<button id="myButton">change text</button>
+<!--this is using tags(Dont use this) (11)telling that to execute the file as javascript -->
+      <script type="text/javascript">
+/*
+when the page opens it will give a pop up window saying page is
+use (;) if we are going to write multiple code in same line
+*/
+//alert('page is loaded');
+
+
+// following code will get the conent from id 'text' which is "Hello World!" and change it to "Hello Rob!"
+// document.getElementById('text').innerHTML = "Hello Rob!";
+
+//have a pop up button when you click the button saying change text using its id
+    document.getElementById('myButton').onclick = function() {
+    alert('button clicked');
+
+// have a pop up button change the contant to hello rob! when you click the button
+      document.getElementById('text').innerHTML = "Hello Rob!";
+
+    }
+      </script>
+  </body>
+</html>

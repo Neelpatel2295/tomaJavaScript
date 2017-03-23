@@ -1,34 +1,47 @@
 <html>
-  <head>
+
+<head>
     <title>Javascript</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--- In line code example (Don't use it in industry)
     <button onclick="alert('HI')">Click me</button>
 -->
-<p id="text">Hello World!</p>
+    <p id="text">Hello World!</p>
+    //create a button
+    <button id="myButton">change text</button>
+    <p id = "secondParagraph">javascript is ...</p>
+    //created a second button
+    <button id="secondButton">Change me again</button>
+    <!--this is using tags(Dont use this) (15)telling that to execute the file as javascript -->
+    <script type="text/javascript">
+    // all the codes inside this are liner code
+        /*
+            when the page opens it will give a pop up window saying page is
+            use (;) if we are going to write multiple code in same line
+            code:
+            alert('page is loaded');
+        */
 
-<button id="myButton">change text</button>
-<!--this is using tags(Dont use this) (11)telling that to execute the file as javascript -->
-      <script type="text/javascript">
-/*
-when the page opens it will give a pop up window saying page is
-use (;) if we are going to write multiple code in same line
-*/
-//alert('page is loaded');
+        // following code will get the conent from id 'text' which is "Hello World!" and change it to "Hello Rob!"
+        // code :-  document.getElementById('text').innerHTML = "Hello Rob!";
+
+        document.getElementById('myButton').onclick = function() {
+        //have a pop up button when you click the button saying change text using its id
+            //alert('button clicked');
+
+        // change the contant to hello rob! when you click the button
+          document.getElementById('text').innerHTML = "Hello Rob!";
+        };
+        //when you click second button our result should say javascript is ... awesome
+        document.getElementById('secondButton').onclick = function() {
+          document.getElementById('secondParagraph').innerHTML = document.getElementById('secondParagraph').innerHTML+ "awesome";
+        };
 
 
-// following code will get the conent from id 'text' which is "Hello World!" and change it to "Hello Rob!"
-// document.getElementById('text').innerHTML = "Hello Rob!";
+// finished at 4:54 of section 4 lecture 94
+    </script>
+</body>
 
-//have a pop up button when you click the button saying change text using its id
-    document.getElementById('myButton').onclick = function() {
-    alert('button clicked');
-
-// have a pop up button change the contant to hello rob! when you click the button
-      document.getElementById('text').innerHTML = "Hello Rob!";
-
-    }
-      </script>
-  </body>
 </html>
